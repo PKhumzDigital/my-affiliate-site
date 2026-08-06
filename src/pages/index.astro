@@ -1,11 +1,62 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+const siteName = "SolarGuideUK";
 ---
 
-<Layout>
-	<Welcome />
-</Layout>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SolarGuideUK — Home Solar Made Simple</title>
+  <meta name="description" content="Independent guides on UK home solar panels, battery storage, and government grants." />
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: system-ui, sans-serif; background: #0f172a; color: #e2e8f0; }
+    header { text-align: center; padding: 4rem 1.5rem 3rem; }
+    header h1 { font-size: 2.2rem; color: #fbbf24; margin-bottom: 0.75rem; }
+    header p { font-size: 1.1rem; color: #94a3b8; max-width: 500px; margin: 0 auto; }
+    .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 1.5rem; padding: 2rem; max-width: 1000px; margin: 0 auto; }
+    .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; padding: 1.5rem; }
+    .card h3 { color: #fbbf24; margin-bottom: 0.5rem; font-size: 1.1rem; }
+    .card p { color: #cbd5e1; font-size: 0.95rem; line-height: 1.5; }
+    footer { text-align: center; padding: 2rem; color: #64748b; font-size: 0.85rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>☀️ Home Solar, Explained Simply</h1>
+    <p>Independent, plain-English guides to help UK homeowners save money with solar panels and battery storage.</p>
+  </header>
+
+  <section class="cards">
+    <div class="card">
+      <h3>🔆 Best Solar Panels 2026</h3>
+      <p>Compare the top-rated panels for UK homes, based on efficiency, warranty, and price.</p>
+    </div>
+    <div class="card">
+      <h3>🏛️ UK Solar Grants</h3>
+      <p>Find out which government schemes you qualify for and how much you could save.</p>
+    </div>
+    <div class="card">
+      <h3>🔋 Battery Storage</h3>
+      <p>Should you add a battery? We break down the costs and payback time.</p>
+    </div>
+    <div class="card">
+      <h3>💷 Solar Panel Costs</h3>
+      <p>A full breakdown of installation costs, running savings, and payback periods.</p>
+    </div>
+    <div class="card">
+      <h3>🏠 Is My Home Suitable?</h3>
+      <p>Roof type, direction, and shading — what actually matters for solar output.</p>
+    </div>
+    <div class="card">
+      <h3>📋 How to Get Started</h3>
+      <p>A step-by-step guide to finding an installer and getting your first quote.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2026 SolarGuideUK.co.uk — For informational purposes only. Not financial advice.</p>
+  </footer>
+</body>
+</html>
