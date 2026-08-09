@@ -1,5 +1,8 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "my-affiliate-site",
-  "compatibility_date": "2025-06-01"
+  "compatibility_date": "2025-06-01",
+  "assets": {
+    "directory": "./dist"
+  }
 }
