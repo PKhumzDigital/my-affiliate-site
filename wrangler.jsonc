@@ -1,0 +1,5 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "my-affiliate-site",
+  "compatibility_date": "2025-06-01"
+}
